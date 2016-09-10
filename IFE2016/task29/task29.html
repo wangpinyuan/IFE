@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>task29</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;font-size: 16px;}
+		form{
+			width: 500px;
+			margin: 20px auto;
+		}
+		label{
+			font-weight: bold;
+		}
+		input[type=text]{
+			margin-left: 20px;
+			width: 200px;
+			height: 30px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			transition: all 0.2s;
+		}
+		button{
+			height: 35px;
+			width: 70px;
+			color: #fff;
+			background-color: #2B78C0;
+			font-weight: bold;
+			border-radius: 10px;
+			border: none; 
+		}
+		p{
+			margin-top: 10px;
+			margin-left: 50px;
+			color: #ccc;
+		}
+		/**/
+		input:focus{
+			border:1px solid #2B78C0;
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<label>名称</label>
+	<input type="text" name="name">
+	<button>验证</button>
+	<p>必填，长度为4~16个字符</p>
+</form>
+<script type="text/javascript">
+window.onload = function(){
+	var input = document.getElementsByTagName("input")[0];
+	var btn = document.getElementsByTagName("button")[0];
+	var p = document.getElementsByTagName("p")[0];		
+	// var re = /[\w\u4e00-\u9fa5]/i;
+	function getLength(str){
+		return str.replace(/[^x00-xff]{4,16}/g,"xx").length;
+	}
+	btn.onclick = function(){
+		 var length = getLength(input.value);
+		 // var check = re.test(input.value);
+		if((length>=4&&length<=16)){
+			p.innerHTML = "名称格式正确";
+			p.style.color = "#79C865";
+			input.style.borderColor = "#79C865";
+		}else if(length == 0){
+			p.innerHTML = "姓名不能为空";
+			p.style.color = "#f00";
+			input.style.borderColor = "#f00";
+		}else{
+			p.innerHTML = "名称格式错误";
+		}
+		return false;
+	}
+	
+}
+</script>
+</body>
+</html>

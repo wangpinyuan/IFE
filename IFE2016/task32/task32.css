@@ -1,0 +1,66 @@
+/*task32.css*/
+*{margin:0;padding: 0;box-sizing: border-box;}
+/*aside*/
+#aside{
+	width: 300px;
+	float: left;
+}
+fieldset{
+	padding: 20px;
+}
+#divOptions{
+	/*overflow: hidden;*/
+	display: none;
+}
+#divOptions fieldset{
+	padding-right: 5px
+
+}
+#divOptions span{
+	display: inline-block;
+	margin: 10px 10px 0 0;
+	padding:0 5px;
+	background-color: #85C7FF;
+}
+#divOptions span:hover{
+	background-color:#f00; 
+}
+
+/**/
+#mainform{
+	width: 900px;
+	float: right;
+	border: 1px solid #000;
+	padding: 20px;
+	padding-left: 200px;
+}
+#mainform div label:first-child{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+#mainform div input[type = "text"],
+#mainform div input[type = "password"]{
+	margin: 20px;
+}
+#mainform div input[type="radio"],
+#mainform div input[type="checkbox"],
+#mainform div select{
+	margin: 10px;
+	margin-left: 20px;
+}
+#mainform div textarea{
+	vertical-align: top;
+	margin: 10px 20px;
+}
+/**/
+#mainform span{
+	font-size: 12px;
+	color: #999;
+}
+#mainform select{
+	width: 75px;
+	height: 25px;
+	text-align: center;
+}
+

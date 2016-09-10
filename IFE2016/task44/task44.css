@@ -1,0 +1,9 @@
+/*task44.css*/
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#main{
+	position: relative;
+}
+.box{
+	float: left;
+	padding: 16px 0 0 16px;
+}

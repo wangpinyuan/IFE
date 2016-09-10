@@ -1,0 +1,149 @@
+*{margin: 0;padding: 0;}
+ul{
+	list-style-type: none;
+}
+/*飞船*/
+#ship1{
+	background-color: #fff;
+	position: absolute;
+	 transform: rotate(0deg);
+	 transform-origin: 25px 125px;
+	left: 25px;
+	top: -75px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+#ship2{
+	background-color: #fff;
+	position: absolute;
+	 transform: rotate(0deg);
+	 transform-origin: 25px 175px;
+	left: 25px;
+	top: -125px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+#ship3{
+	background-color: #fff;
+	position: absolute;
+	 transform: rotate(0deg);
+	 transform-origin: 25px 225px;
+	left: 25px;
+	top: -175px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+#ship4{
+	background-color: #fff;
+	position: absolute;
+	 transform: rotate(0deg);
+	 transform-origin: 25px 275px;
+	left: 25px;
+	top: -225px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+/**/
+#buttons{
+	position: absolute;
+}
+#buttons ul li{
+	float: left;
+	margin-left: 5px;
+} 
+#buttons{
+	font: 12px "黑体";
+	line-height: 40px;
+}
+
+/**/
+.box{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: #009a61;
+	border-radius: 50%;
+}
+#box-container1{
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border:1px solid #009a61;
+}
+#box-container2{
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	border:1px solid #009a61;
+}
+#box-container3{
+	width: 400px;
+	height: 400px;
+	background-color: transparent;
+	border:1px solid #009a61;
+}
+#box-container4{
+	width: 500px;
+	height: 500px;
+	background-color: transparent;
+	border:1px solid #009a61;
+}
+/**/
+#console{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 400px;
+	border: 1px solid #aaa;
+	box-sizing: border-box;
+	font-size: 12px;
+	z-index: 1000;
+}
+#console-title{
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	cursor: move;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+#console-text{
+	overflow: auto;
+	height: 100px;
+	width: 100%;
+	background-color: #aaa;
+	color: #fff;
+	resize: vertical;
+	margin-top: 30px;
+}
+#console-text p{
+	margin-left: 50px;
+}
+/*table*/
+#table{
+	border-collapse: collapse;
+	position: absolute;
+	left: 0;
+	top: 300px; 
+}
+#table td{
+	height: 25px;
+	width: 75px;
+	font-size: 12px;
+	text-align: center;
+}

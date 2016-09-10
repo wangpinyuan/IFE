@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>task22</title>
+	<script type="text/javascript" src="task22.js"></script>
+	<style type="text/css">
+		div{
+			display: flex;
+			border: 1px solid #000;
+			justify-content: space-around;
+			align-items: center;
+			overflow: hidden;
+		}
+		.child0{
+			margin: 20px auto;
+			width:800px;
+			height: 400px;	
+		}
+		.child1{
+			width: 300px;
+			height: 300px;
+		}
+		.child2{
+			width: 100px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<button>前序遍历</button>
+	<button>中序遍历</button>
+	<button>后序遍历</button>
+<div class="child0">
+	<div class="child1">
+		<div class="child2"></div>
+		<div class="child2"></div>
+	</div>
+	<div class="child1">
+		<div class="child2"></div>
+		<div class="child2"></div>
+	</div>
+</div>
+</body>
+</html>

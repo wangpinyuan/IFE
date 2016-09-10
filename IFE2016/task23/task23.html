@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>task23</title>
+	<script type="text/javascript" src="task23.js"></script>
+	<style type="text/css">
+		div{
+			display: flex;
+			border: 1px solid #000;
+			justify-content: space-around;
+			align-items: center;
+			overflow: hidden;
+			/*flex-grow: 1;*/
+		}
+		.child0{
+			margin: 20px auto;
+			width:800px;
+			height: 400px;	
+		}
+		.child1{
+			width: 300px;
+			height: 300px;
+		}
+		.child2{
+			width: 50px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<button>深度优先遍历</button>
+	<button>广度优先遍历</button>
+	<input type="text" name="search" placeholder="whats ur wish?">
+	<button>深度优先查询</button>
+	<button>广度优先查询</button>
+<div class="child0">苹果
+	<div class="child1">香蕉
+		<div class="child2">橘子</div>
+		<div class="child2">西瓜</div>
+		<div class="child2">梨</div>
+	</div>
+	<div class="child1">芒果
+		<div class="child2">葡萄</div>
+		<div class="child2">哈密瓜</div>
+	</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+*{padding: 0;margin: 0;}
+img{width: 80px;height: 80px;}
+body{
+	padding: 20px;
+}
+#container,#logo,#mainbody,#aside{
+	border: 1px solid #999;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#container{
+	float: left;
+	background-color: #eee;
+	width: 100%;
+}
+#wrapper{
+	float: left;
+	width: 100%;
+	margin-right: -120px;
+}
+#logo{
+	float: left;
+	width: 200px;
+}
+#logo p{
+	float: right;
+}
+#mainbody{
+	width: auto;
+	margin-left: 220px;
+	margin-right: 140px;
+}
+#aside{
+	float: left;
+	width: 120px;
+}
+#aside img{
+	margin-top:20px;
+}
+#aside img:first-child{
+	margin-top:0px;
+}

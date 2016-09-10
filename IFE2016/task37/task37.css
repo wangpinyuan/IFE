@@ -1,0 +1,5 @@
+/*task37.css*/
+#float{
+	overflow: auto;
+	resize: both;
+}

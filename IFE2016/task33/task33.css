@@ -1,0 +1,113 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#row{
+	position: absolute;
+	top: -0;
+	left: -25px;
+	line-height: 30px;
+}
+#col{
+	position: absolute;
+	top: -25px;
+	left: 14px;
+}
+#col li{
+	float: left;
+	margin-right: 20px;
+}
+#col li:last-child{
+	margin-right: 0;
+}
+
+/*tips*/
+#tips {
+	float: left;
+	margin-left: 50px;
+	font: 12px "黑体";
+	line-height: 20px;
+
+}
+/*10*10格子*/
+#wrapper{
+	position: relative;
+	margin: 50px auto;
+	width: 300px;
+	height: 300px;
+	text-align: center;
+}
+#wrapper ul{
+	list-style: none;
+}
+#content div{
+	float: left;
+	width: 30px;
+	height: 30px;
+	outline: 1px solid #aaa;
+}
+/*小方格*/
+#block{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #f00;
+	border-top: 10px solid blue;
+	transition: all 1s;
+}
+/*控制台*/
+#control{
+	position: relative;
+	width: 300px;
+	/*height: 150px;*/
+	margin: 0 auto;	
+	text-align: center;
+}
+#control textarea{
+	margin: 0; 
+	width: 300px;
+	height: 150px;
+	padding-left: 50px;
+	font-size: 12px;
+	line-height: 20px;
+	resize: vertical;
+}
+/*textarea 的侧边栏*/
+#control-row{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	height: 150px;
+	width: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #a5a5a5;
+	text-align: center;
+	overflow: hidden;
+}
+#control-row div{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+#control-row #wrong{
+	background-color: #f00;
+}
+#control-row #running{
+	background-color: green;
+}
+/*墙的样式*/
+.build{
+	background-color: #ccc;
+}
+/*demo*/
+#demo{
+	position: absolute;
+	top: 50px;
+	right: 300px;
+	width:100px;
+	height: 500px;
+	font-size: 12px;
+	color: #535353;
+	text-align: center;
+}
+#demo span{
+	display: inline-block;
+}

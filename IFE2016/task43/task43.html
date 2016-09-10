@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>task43</title>
+<link rel="stylesheet" type="text/css" href="task43.css">
+<style type="text/css">
+	/*2*/
+#pics-2 #pic1{
+	-webkit-clip-path: polygon(0 0, 0 100%, 33% 100%, 66% 0);
+	 clip-path: url("#clip-shape1");
+	position: absolute;
+
+}
+#pics-2 #pic2{
+	-webkit-clip-path: polygon(66% 0, 33% 100%, 100% 100%, 100% 0);
+	 clip-path: url("#clip-shape2");
+	position: absolute;
+
+}
+}
+</style>
+<script type="text/javascript" src="task43.js"></script>
+</head>
+<body>
+<button>添加</button>
+<div id="pics-1" class="pics">	
+	<img id="pic1" src="http://placehold.it/500x300/4c6eb4">
+</div>
+
+<svg class="clip-svg" width="0" height="0">
+  <defs>
+    <clipPath id="clip-shape1" clipPathUnits="objectBoundingBox" >
+      <polygon points="0 1, 0 0, 0.7 0, 0.3 1" />
+    </clipPath>
+  </defs>
+</svg>
+<svg class="clip-svg" width="0" height="0">
+  <defs>
+    <clipPath id="clip-shape2" clipPathUnits="objectBoundingBox" >
+      <polygon points="1 0, 1 1, 0.3 1, 0.7 0" />
+    </clipPath>
+  </defs>
+</svg>
+</body>
+</html>

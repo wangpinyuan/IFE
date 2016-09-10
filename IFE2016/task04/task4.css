@@ -1,0 +1,29 @@
+/*task4.css*/
+#body{
+	position: absolute;
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	top: 0; left: 0; bottom: 0; right: 0; 
+}
+#left{
+	position: absolute;
+	box-sizing: border-box;
+	top: -50px;left: -50px;
+	width: 100px;height: 100px;
+	background-color: #fc0;
+	border-bottom-right-radius: 50px;
+	border-top: 50px solid #fff;
+	border-left: 50px solid #fff;
+}
+#right{
+	position: absolute;
+	box-sizing: border-box;
+	bottom: -50px;right: -50px;
+	width: 100px;height: 100px;
+	background-color: #fc0;
+	border-top-left-radius: 50px;
+	border-bottom: 50px solid #fff;
+	border-right: 50px solid #fff;
+}

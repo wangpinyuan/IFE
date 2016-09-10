@@ -1,0 +1,15 @@
+/*task17.css*/
+*{padding: 0;margin: 0;}
+body{padding: 20px;}
+.aqi-chart-wrap{
+	/*overflow: hidden;*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 500px;
+	width: 1160px;
+	margin: 0 auto;
+}
+.aqi-bar{
+	flex-basis: 100px;
+}

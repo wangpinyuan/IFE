@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>task32</title>
+	<link rel="stylesheet" type="text/css" href="task32.css">
+</head>
+<body>
+
+<form id="aside">
+	<fieldset>
+	<legend>类型</legend>
+	<select id="type">
+		<option>文本</option>
+		<option>单选按钮</option>
+		<option>复选按钮</option>
+		<option>下拉框</option>
+		<!-- <option>textarea</option> -->
+	</select>
+	<input type="text" id="textname" value="姓名" >
+	</fieldset>
+	<div id="divTexttype">
+		<fieldset>
+		<legend>文本类型</legend>
+		<select id="texttype">
+			<option>文本</option>
+			<option>邮箱</option>
+			<option>密码</option>
+			<option>电话</option>
+			<option>QQ</option>
+		</select>
+		</fieldset>
+	</div>
+	<div id="divOptions">
+	<fieldset>
+	<legend>请输入选项</legend>
+		<textarea placeholder="以回车 空格 逗号 顿号 间隔,单击删除..."></textarea>
+		<button>确认</button>
+		<p id="options"></p>
+	</fieldset>
+	</div>
+	<button id="button">提交</button>
+</form>
+
+<form id="mainform">
+
+</form>
+<script type="text/javascript" src="task32.js"></script>
+</body>
+</html>

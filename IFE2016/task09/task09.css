@@ -1,0 +1,586 @@
+/*task09.css*/
+*{margin: 0;padding: 0;box-sizing: border-box;font-size: 12px;}
+#container{
+	width: 1280px;
+	margin: 0 auto;
+	height: 1265px
+}
+ul{
+	list-style-type: none;
+}
+/*header*/
+header{
+	background-color: #2189BE;
+	width: 100%;
+	height: 60px;
+}
+header .header-l{
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+header .header-r input{
+	width: 255px;
+	height: 25px;
+	float: left;
+	margin-top: 12px;
+	margin-left: 790px;
+	border-radius: 15px;
+	border: none;
+	padding:0 15px;
+	text-align: right;
+}
+header .header-r img{
+	position: absolute;
+	left: 920px;
+	top: 17px;
+
+}
+header .header-r span{
+	float: right;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	width: 60px;
+	text-align: center;
+	margin-right: 50px;
+	margin-top: 15px;
+	background:  url(img/login.png) no-repeat ;
+	font: 12px "黑体";
+	color: #fff;
+}
+/*aside*/
+aside{
+	float: left;
+	position: relative;
+	width: 260px;
+	background-color: #2B2E3D;
+	height: 100%;
+}
+aside .aside-top{
+	height: 150px;
+}
+aside .aside-top img{
+	float: left;
+	margin-left: 45px;
+	margin-top: 15px;
+}
+aside .aside-top span{
+	float: left;
+	margin-left: 18px;
+	margin-top: 35px;
+	font: 16px "黑体";
+	color: #fff;
+}
+aside .aside-top .top-l{
+	position: absolute;	
+	top: 95px;
+	left: 60px;
+	font: 16px "黑体";
+	color: #6e8095;
+	border-right: 1px solid #6e8095;
+	padding-right: 30px;
+	text-align: center;
+
+}
+aside .aside-top .top-r{
+	position: absolute;	
+	top: 95px;
+	left: 150px;
+	font: 16px "黑体";
+	color: #6e8095;
+	padding-right: 30px;
+	text-align: center;
+}
+aside .aside-mid{
+	height: 300px;
+	background-color:#383d4e;
+}
+aside .aside-mid ul,aside .aside-bot ul{
+	float: left;
+	color: #6e8095;
+	font: 12px "黑体";
+	line-height: 48px;
+}
+aside .aside-mid ul img{
+	margin-right: 10px;
+}
+aside .aside-mid .ul1{
+	margin-left: 70px;
+}
+aside .aside-mid .ul2{
+	margin-left: 30px;
+}
+aside .aside-mid .ul3{
+	margin-left: 15px;
+}
+
+aside .aside-bot .ul1{
+	margin-left: 70px;
+}
+/*section*/
+section{
+	float: right;
+	background-color: #EDEDED;
+	height: 100%;
+	width: 1020px;
+}
+section nav{
+	background-color: #fff;
+	width: 100%;
+	height: 30px;
+	font: 12px "黑体";
+	color: #6e8095;
+	line-height: 30px;
+	padding-left: 30px;
+}
+section nav span{
+	color: #6798C0;
+}
+.section{
+	width: 890px;
+	float: left;
+	margin-left: 65px;
+}
+/*scetion1*/
+section .section1{
+	height: 85px;
+	background-color: #fff;
+	margin-top: 15px;
+}
+section .section1>ul{
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+	font: 12px "黑体";
+	line-height: 26px;
+	color: #aaa;
+}
+section .section1>ul>li{
+	float: left;
+	margin-right: 35px;
+}
+section .section1 ul li span{
+	margin-right: 15px;
+}
+section .section1 .ul-2 span{
+	display: inline-block;
+}
+section .section1 .ul-2 select{
+	width: 115px;
+	height: 25px;
+}
+section .section1 .ul-3 {
+	width: 322px;
+	height: 20px;
+}
+section .section1 .ul-3 li{
+	float: left;
+	margin-right: 15px;
+}
+section .section1 .ul-3 input{
+	height: 25px;
+	width: 120px;
+}
+section .section1 .ul-3 select{
+	width: 70px;
+	height: 25px;
+}
+section .section1 .ul-3 li:nth-child(4) select{
+	width: 120px;
+}
+section .section1 button{
+	margin-top: 18px;
+	margin-left: -15px;
+	width: 50px;
+	height: 25px;
+	color: #fff;
+	background-color: #388BC1;
+	border:0;
+	border-radius: 3px;
+}
+/*section2*/
+section .section2{
+	height: 70px;
+	margin-top: 10px;
+}
+section .section2 ul{
+	float: left;
+}
+section .section2 ul li{
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	height: 70px;
+	background-color: #fff;
+	border: 1px solid #cacdd1;
+	border-right-color: #ebecee;
+	border-bottom-color: #ebecee;
+	text-align: center;
+	line-height: 70px;
+	width: 110px;
+}
+
+section .section2 ul li:nth-child(1),section .section2 ul li:nth-child(8){
+	color: #aeaeae;
+	font-size: 25px;
+	width: 35px;
+}
+section .section2 ul li:nth-child(9){
+	width: 120px;
+	margin-right: 0;
+	color: #535353;
+	font: 12px "微软雅黑";
+}
+section .section2 li:nth-child(9) img{
+	position: absolute;
+	top:15px;
+	left: 20px;
+}
+section .section2 li:nth-child(9) span{
+	position: absolute;
+	top: 22px;
+	left: 60px;
+}
+section .section2 .ul-1 div:first-child{
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+	line-height: 0;
+	color: 323333;
+	font: 12px "黑体";
+}
+section .section2 .ul-1 div:last-child{
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+	line-height:30px;
+}
+section .section2 .ul-1 div:last-child span:first-child{
+	font-size: 13px;
+	color: #aeaeae;
+}
+section .section2 .ul-1 div:last-child span:last-child{
+	color: #ec6602;
+	font-size: 21px;
+}
+section .section2 .ul-1:hover{
+	border-top: 4px solid #398AC1;
+}
+/*section3*/
+section .section3{
+	margin-top: 20px;
+	height: 90px;
+}
+section .section3 span{
+	color:#323333;
+	font: 12px "微软雅黑";
+	float: left;
+}
+section .section3 ul{
+	float: left;
+}
+section .section3>ul>li{
+	float: left;
+	width: 200px;
+	height: 70px;
+	margin-right: 30px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+section .section3 ul li:last-child{
+	margin-right: 0;
+}
+section .section3 ul ul li:first-child{
+	font: 12px "黑体";
+	margin-top: 18px;
+	margin-left: 10px;
+}
+section .section3 ul ul li:last-child{
+	font: 10px "黑体";
+	color: #aaa;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+section .section3>ul>li:nth-child(1){
+	border-left: 4px solid #43B29F;
+}
+section .section3>ul>li:nth-child(2){
+	border-left: 4px solid #398AC1;
+}
+section .section3>ul>li:nth-child(3){
+	border-left: 4px solid #CE4A35;
+}
+section .section3>ul>li:nth-child(4){
+	border-left: 4px solid #E1CD46;
+}
+section .section3 ul li:nth-child(1) div{
+	position: relative;
+	top: 10px;
+	left: 120px;
+	height: 45px;
+	width: 60px;
+	background-color: #43B29F;
+}
+section .section3 ul li:nth-child(2) div{
+	position: relative;
+	top: 10px;
+	left: 120px;
+	height: 45px;
+	width: 60px;
+	background-color: #398AC1;
+}
+section .section3 ul li:nth-child(3) div{
+	position: relative;
+	top: 10px;
+	left: 120px;
+	height: 45px;
+	width: 60px;
+	background-color: #CE4A35;
+}
+section .section3 ul li:nth-child(4) div{
+	position: relative;
+	top: 10px;
+	left: 120px;
+	height: 45px;
+	width: 60px;
+	background-color: #E1CD46;
+}
+/*section4*/
+section .section4{
+	position: relative;	
+	margin-top: 15px;
+	height: 355px;
+}
+section .section4 .section4-l{
+	float: left;
+	margin-right: 10px;
+	width: 530px;
+	height: 350px;
+	background-color: #fff;
+	border: 1px solid #ced1d4;
+	border-radius: 10px;
+}
+section .section4 .section4-r{
+	float: left;
+	width: 350px;
+	height: 350px;
+	background-color: #fff;
+	border: 1px solid #ced1d4;
+	border-radius: 10px;
+}
+section .title{
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+	background-color: #f4f5f6;
+	line-height: 40px;
+	padding-left: 20px;
+	padding-top: 15px;
+	font: 12px "黑体";
+	color: #aaa;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+/*tab*/
+section .section4-l .tab{
+	position:relative;
+	top: 15px;
+	left: 20px;
+}
+section .section4-l .tab .tab-title ul li{
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	height: 25px;
+	width: 85px;
+	line-height: 25px;
+	text-align: center;
+	background-color: #ECEBF0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+section .section4-l .tab .tab-title #titleSelected{ /*tab选中*/
+	height: 26px;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background-color: #fff;
+	z-index: 1;
+}
+section .section4-l .tab .tab-content{
+	position: absolute;
+	top: 25px;
+	width: 490px;
+	height: 250px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+
+}
+section .section4-l .tab .tab-content .tab-content-table{
+	position: relative;
+	top: 30px;
+	left: 35px;
+	display: none;
+}
+section  table{
+	border-collapse: collapse;
+}
+section .section4-l .tab .tab-content .tab-content-table td{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	color: #535353;
+}
+section .section4-l .tab .tab-content #divSelected{/*更换div*/
+	display: block;
+}
+section .section4-l .tab .tab-content .tab-content-table #tdSelected{/*选中td*/
+	background-color: #EDEDEF;
+	/*display: inline;*/
+}
+/**/
+section .section4-r h3{
+	color: #c3c2c2;
+	font: 12px "微软雅黑";
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+section .section4-r h4{
+	font: 12px "微软雅黑";
+	color: #535353;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+section .section4-r .info1{
+	float: left;
+	margin-top: 15px;
+	margin-left: 45px;
+	width: 280px;
+	border-bottom: 1px solid #e7e7e7;
+}
+section .section4-r .info2{
+	float: left;
+	margin-left: 45px;
+	width: 80px;
+	border-right: 1px solid #e7e7e7;
+}
+section .section4-r .info3{
+	float: left;
+	margin-right: 50px;
+}
+section .section4-r .info4{
+	float: left;
+	width: 315px;
+	margin-left: 45px;
+	border-top: 1px solid #e7e7e7;
+}
+/*section5*/
+section .section5{
+	height:360px;
+	margin-top: 10px;
+}
+section .section5 .section5-l{
+	float: left;
+	margin-right: 10px;	
+	width: 350px;
+	height: 350px;
+	background-color: #fff;
+	border: 1px solid #ced1d4;
+	border-radius: 10px;
+}
+section .section5-l .tab{
+	width: 310px;
+	height: 40px;
+	margin-left: 20px;
+	padding: 10px 0;
+	border-bottom: 1px solid #A8CFEC;
+}
+section .section5-l .tab ul li{
+	float: left;
+	margin-right: 10px;
+}
+section .section5-l .tab ul li:nth-child(2) select{
+	text-align: center;
+	width: 80px;
+}
+section .section5-l .tab ul li:nth-child(3) select{
+	text-align: center;
+	width: 70px;
+}
+section .section5-l .tab ul li:nth-child(4){
+	margin-right: 0;
+}
+section .section5-l ul li button{
+	width: 65px;
+	height: 20px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+section .section5-l .calendar{
+	width: 310px;
+	margin-left: 20px;
+}
+section .section5-l .calendar .calendar-title{
+	padding-left: 15px;
+	width: 100%;
+	height:30px;
+	border-bottom: 1px solid #aaa;
+}
+section .section5-l .calendar .calendar-title ul li{
+	float: left;
+	line-height: 30px;
+	margin-right: 30px;
+}
+section .section5-l .calendar .calendar-contant ul li{
+	float: left;
+	margin-top: 5px;
+}
+section .section5-l .calendar .calendar-contant ul li span:hover{
+	border: 1px solid #f5c21d;
+}
+section .section5-l .calendar .calendar-contant ul li span{
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin: 1px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+section .section5-l .calendar .calendar-contant ul li:first-child{
+	margin-left: 168px;
+}
+section .section5 .section5-r{
+	float: left;	
+	width: 530px;
+	height: 350px;
+	background-color: #fff;
+	border: 1px solid #ced1d4;
+	border-radius: 10px;
+}
+section .section5 .section5-r .section5-contant{
+	position: relative;
+	left: 40px;
+	top: 20px;
+}
+section .section5-r tr td:first-child{
+	height: 25px;
+	width: 70px;
+	text-align: center;
+
+}section .section5-r tr td:nth-child(2){
+	height: 25px;
+	width: 90px;
+	text-align: center;
+
+}section .section5-r tr td:last-child{
+	height: 25px;
+	width: 295px;
+	padding-left: 30px;
+}
+section .section5-r #trSelected{/*选中tr*/
+	background-color: #EDEDEF;
+}

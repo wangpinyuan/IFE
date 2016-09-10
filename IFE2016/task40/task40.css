@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#calendar{
+	position: relative;
+	width: 422px;
+	height: 472px;
+	margin-top:10px;
+	border:1px solid #000; 
+}
+#head{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+#head #pre{
+	position: absolute;
+	font-size: 30px;
+}
+#head #next{
+	position: absolute;
+	font-size: 30px;
+	top: 0;
+	right: 0;
+}
+#head #date{
+	position: absolute;
+	font-size: 20px;
+	left: calc(50% - 40px);
+	top: 10px;
+}
+#mainbody span{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+}
+#selected{
+	background-color: #f00;
+	color: #fff; 
+}
+.weekend{
+	color: #f00;
+}
+.prenext{
+	color:#ccc;
+}
+.now{
+	color: #000;
+}
+#input{
+	width: 200px;
+	height: 30px;
+	margin:0 auto;
+}

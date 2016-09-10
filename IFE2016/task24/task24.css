@@ -1,0 +1,17 @@
+/*task24.css*/	
+div{
+	display: flex;
+	border: 1px solid #000;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+	height: 80%;
+	width: 50%;
+	margin: 5px; 
+	box-sizing: border-box;
+}
+.child0{
+	margin: 20px auto;
+	width:1000px;
+	height: 200px;	
+}	

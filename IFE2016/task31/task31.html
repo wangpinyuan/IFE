@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">												
+	<title>task31</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;margin: 10px;}
+		form{
+			width: 960px;
+			text-align: center;
+			margin: 20px auto;
+		}
+		#select,#input{
+			display: none;
+		}
+		#city,#school{
+			width: 100px;
+			height: 20px;
+		}
+	</style>
+</head>
+<body>
+<form>
+
+	<input id="inschool" checked="" type="radio" name="school" >在校生
+	<input id="outschool" checked="" type="radio" name="school" >非在校生
+
+<div id="select">
+	<select id="city" name="city" >
+		<option value="0">上海</option>
+		<option value="1">山东</option>
+		<option value="2">北京</option>
+	</select>
+	<select id="school" name="school" >
+	<!-- 插入option -->
+	</select>
+</div>
+
+<div id="input">
+	<label>就业单位</label>
+	<input type="text" name="company">
+</div>
+</form>
+<script type="text/javascript">
+	var schools = [
+		["上海大学","复旦大学","上海财经大学"],
+		["青岛海洋大学","山东大学","山东财经大学"],
+		["北京大学","清华大学","中央财经大学"]
+	];
+	var selectCity = document.getElementById("city");
+	var selectSchool = document.getElementById("school");
+	var input = document.getElementById("input");
+	var radio  = document.getElementsByTagName("input");
+	//被选中的radio
+	function whichRadio(){
+		for (var i = 0; i < radio.length; i++) {
+			if(radio[i].checked == true){
+				return radio[i].id;
+			}
+		}
+	}
+	//onchange事件  隐藏
+	function whichHidden(){
+		var id = whichRadio();
+		if(id == "inschool"){
+			select.style.display = "block";
+			input.style.display = "none";
+		}else if(id == "outschool"){
+			select.style.display = "none";
+			input.style.display = "block";
+		}
+	}
+
+	// 获得select项
+	function getSchool(){
+		var citySchool = schools[selectCity.selectedIndex];
+		selectSchool.innerHTML = "";
+		for (var i = 0; i < citySchool.length; i++) {
+			// selectSchool[i+1] = new Option(citySchool[i],citySchool[i]);
+			var options = document.createElement("option");
+			options.innerHTML = citySchool[i];
+			selectSchool.appendChild(options);
+		}
+	}
+	getSchool();
+	// 添加onchange事件
+	var selectItems = document.getElementsByTagName("select");
+	var inputItems = document.getElementsByTagName("input");
+	selectItems[0].onchange = getSchool;
+	inputItems[0].onchange = whichHidden;
+	inputItems[1].onchange = whichHidden;
+
+</script>
+</body>
+</html>

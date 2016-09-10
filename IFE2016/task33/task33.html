@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>task33</title>
+	<link rel="stylesheet" type="text/css" href="task33.css">
+</head>
+<body>
+<!-- 提示栏 -->
+<div id="tips">
+	<ul>
+		<li><strong>在输入框中允许输入如下指令，按下按钮后，使得正方形做相应动作</strong></li>
+		<li>GO：向蓝色边所面向的方向前进一格</li>
+		<li>GO N：向蓝色边所面向的方向前进N格(N<9)</li>
+		<li>TURN LEFT：向左转</li>
+		<li>TURN RIGHT：向右转</li>
+		<li>TURN BACK：向后转</li>
+		<li>BUILD：造墙</li>
+		<li>BRU #??????：改变紧邻墙的颜色</li>
+		<li>MOVE TO X,Y  到X,Y去(1< X,Y< 10)</li>
+
+	</ul>
+</div>
+<!-- 10*10 -->
+<div id="wrapper">
+	<ul id="col">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<ul id="row">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<div id="content"></div>
+	<div id="block" style="transform:rotate(0deg);top: 0;left: 0;"></div>
+</div>
+<!-- 控制台 -->
+<div id="control">
+	<div id="control-row"></div>
+	<textarea autocomplete="off"></textarea>
+	<br/>
+	<button id="run">执行指令</button>	
+	<button id="reset">重置指令</button>	
+	<button id="build">随机造墙</button>	
+</div>
+<div id="demo">
+<strong>示例</strong><br/>
+move to 2,3<br/>
+build<br/>
+bru #CC3333<br/>
+move to 8,2<br/>
+turn right<br/>
+build<br/>
+bru #333399<br/>
+move to 5,4<br/>
+build<br/>
+bru ##CC3399<br/>
+move to 6,4<br/>
+build<br/>
+bru #339966<br/>
+turn right<br/>
+build<br/>
+bru #FFCC00<br/>
+move to 5,4<br/>
+turn left<br/>
+build<br/>
+move to 5,10<br/>
+move to 1,1<br/>
+turn right<br/>
+</div>
+<script type="text/javascript" src="task33.js"></script>
+<script type="text/javascript" src="pathfinding.js"></script>
+</body>
+</html>
