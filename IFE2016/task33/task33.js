@@ -421,29 +421,29 @@ var Command = {
 		}
 
 	}
-	// //键盘事件 
-	// document.onkeydown = function(event){
-	//     var e = event || window.event;
-	//     switch(e.keyCode){
-	//     	case 37:
-	//     		Block.turnLeft();
-	//     		// e.preventDefault();
-	//     		break;
-	//     	case 38:
-	//     		Block.move();
-	//     		e.stopPropagation();
-	//     		// e.preventDefault();// 防止有滚动条的情况下
-	//     		break;
-	//     	case 39:
-	//     		Block.turnRight();
-	//     		// e.preventDefault();
-	//     		break;
-	//     	case 40:
-	//     		Block.turnBack();
-	//     		// e.preventDefault();
-	//     		break;
-	//     }
-	// }
+	//键盘事件 
+	document.onkeydown = function(event){
+	    var e = event || window.event;
+	    switch(e.keyCode){
+	    	case 37:
+	    		Block.turnLeft();
+	    		// e.preventDefault();
+	    		break;
+	    	case 38:
+	    		Block.move();
+	    		e.stopPropagation();
+	    		// e.preventDefault();// 防止有滚动条的情况下
+	    		break;
+	    	case 39:
+	    		Block.turnRight();
+	    		// e.preventDefault();
+	    		break;
+	    	case 40:
+	    		Block.turnBack();
+	    		// e.preventDefault();
+	    		break;
+	    }
+	}
 	function addHandler(element, type, handler) {
     if(element.addEventListener) {
         addHandler = function(element, type, handler) {
